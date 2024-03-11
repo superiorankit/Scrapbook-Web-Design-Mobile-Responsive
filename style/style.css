@@ -1092,14 +1092,13 @@ button:active{
 
     .footerlinks{
         text-align: center;
-        margin-right: 24px;
+        margin-right: 10px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
 
     .footerlinks>p{
-        margin-bottom: 8px;
+        font-size: 9px;
     }
 
     .bottText{
