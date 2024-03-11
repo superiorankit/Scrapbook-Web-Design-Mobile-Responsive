@@ -1202,9 +1202,13 @@ display: none;
     }
 
     .bottText{
-        text-align: center;
         margin: 31px 0;
         margin-bottom: 5px;
     }
+
+    .footerGraphics{
+        display: none;
+    }
+
 
 }
