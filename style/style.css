@@ -18,10 +18,6 @@ img{
     width: 100%;
 }
 
-/* ::-webkit-scrollbar {
-    display: none;
-  } */
-
 .main{
     width: 100%;
     padding: 0 10%;
@@ -34,6 +30,24 @@ img{
     padding-top: 5%;
 
 }
+
+.hamBurg{
+    width: 29px;
+    height: 17px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    display: hidden;
+}
+
+.hamLine{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.2s;
+}
+
 
 
 .firstLeftGraphics{
@@ -341,13 +355,13 @@ img{
 .fifthDiv{
     width: 100%;
     /* height: 100vh; */
-    padding: 26px 0;
+    padding: 32px 0;
     display: flex;
     justify-content: space-between;
 }
 
 .fifthDivLeftImg{
-    width: 37%;
+    width: 44%;
     position: relative;
 }
 
@@ -359,22 +373,22 @@ img{
 }
 
 .fifthDivRight{
-    width: 59%;
+    width: 53%;
 }
 
 .fifthDivRightImg{
-    width: 48%;
+    width: 62%;
 }
 
 .fifthDivText{
-    margin-top: 54px;
+    margin-top: 49px;
     display: flex;
     justify-content: space-between;
 }
 
 .fifthDivText>h1{
-    width: 30%;
-    font-size: 23px;
+    width: 33%;
+    font-size: 27px;
     font-weight: 700;
     text-decoration: underline;
     /* -webkit-text-stroke: medium; */
@@ -395,12 +409,13 @@ img{
 .fifthDivSideDesc>p{
     margin-bottom: 20px;
     text-align: justify;
+    font-size: 12.4px;
 }
 
 .arrowDiv{
     width: fit-content;
     margin-left: auto;
-    margin-top: 50px;
+    margin-top: 106px;
 }
 
 .arrowDiv:hover{
@@ -719,7 +734,6 @@ button:active{
 }
 
 .ninthImageDiv{
-    float: right;
     width: 55%;
 }
 
@@ -788,9 +802,16 @@ button:active{
 }
 
 
-
+@media (max-width: 1047px){
+    
+}
 
 @media (max-width: 428px){
+
+    .hamBurg{
+        display: flex;
+    }
+    
 
     .firstDiv{
         height: fit-content;
@@ -798,18 +819,50 @@ button:active{
     }
 
     .navDiv{
-        flex-direction: column;
+        position: relative;
+        z-index: 99;
+        transition: all 0.2s;
     }
 
     .navList{
         width: 100%;
+        padding: 20px 0;
+        display: none;
+        transition: all 0.3s;
+    }
+
+    .hamBurg:hover>.hamTop{
+        transform: rotate(45deg) translate(5px, 8px);
+        width: 80%;
+
+    }
+
+
+    .hamBurg:hover>.hamMid{
+        display: none;
+
+    }
+
+
+    .hamBurg:hover>.hamBott{
+        transform: rotate(-45deg) translate(3px, -5px);
+        width: 80%;
+    ;
+
+    }
+
+    .hamBurg:hover + .navDiv>.navList{
+        display: flex;
+    
     }
 
     .contactButton{
+        position: absolute;
+        right: 0;
+        top: -22px;
         font-size: 11px;
         padding: 5px 20px;
         border: 1.5px solid black;
-        margin-top: 16px;
     }
 
     .introDiv{
@@ -873,13 +926,15 @@ button:active{
     }
 
     .thirdDiv{
-        margin-top: 406px;
+        margin-top: 407px;
         flex-direction: column;
         text-align: center;
+        padding: 40px 0;
+
     }
 
     .thirdLeftGraphics{
-        width: 10%;
+        display: none;
     }
 
     .cardDiv{
@@ -895,8 +950,7 @@ button:active{
     }
 
     .thirdRightGraphics{
-        bottom: 0;
-        width: 10%;
+display: none;
     }
 
     .fourthDiv{
@@ -927,10 +981,11 @@ button:active{
         flex-direction: column;
         align-items: center;
         height: fit-content;
+        padding: 0;
     }
 
     .fifthDivLeftImg{
-        width: 70%;
+        width: 100%;
     }
 
     .fifthDivRight{
@@ -939,6 +994,7 @@ button:active{
     }
 
     .fifthDivRightImg{
+        width: 100%;
         margin: auto;
     }
 
@@ -965,6 +1021,11 @@ button:active{
 
     .fifthDivSideDesc{
         font-size: 11px;
+    }
+
+    .arrowDiv{
+        margin: auto;
+        margin-top: 55px ;
     }
 
     .sixthDiv{
@@ -1004,6 +1065,11 @@ button:active{
         bottom: 11px;
     }
 
+    .seventhDiv{
+        padding: 42px 0;
+    margin-top: 781px;
+    }
+
     .seventhTextDiv>h1{
         font-size: 33px;
     line-height: 41px;
@@ -1017,8 +1083,13 @@ button:active{
 
     }
 
+    .eighthDiv{
+        padding: 25px 0;
+
+    }
+
     .eighthGraphTop{
-        width: 42%;
+        display: none;
     }
 
     .eighthDiv>h1{
@@ -1054,37 +1125,52 @@ button:active{
     }
 
     .eighthGraphBott{
-        width: 82%;
+     display: none;
+    }
+
+    .ninthDiv{
+        flex-direction: column-reverse;
+    }
+
+    .ninthTextDiv{
+        width: 100%;
     }
 
     .ninthTextDiv>h1{
         font-size: 32px;
         text-align: center;
-        height: 200px;
+        /* height: 200px; */
         display: flex;
         align-items: center;
+        margin-bottom: 22px;
     }
 
-    input{
-        width: 265%;
-    }
-
-    textarea{
-        width: 265%;
+    .ninthImageDiv{
+        width: 100%;
+    margin-bottom: 45px;
     }
 
 
     button{
         font-size: 12px;
         padding: 10px;
+        margin-top: 31px;
+        width: 50%;
     }
 
     .footer{
         flex-direction: column;
     }
 
+    .footerLinkDiv{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 17px 6px;
+        width: 94%;
+    }
+
     .footerHead{
-        width: 100%;
+        width: fit-content;
     }
 
     .footerHead>h1{
@@ -1096,15 +1182,23 @@ button:active{
         margin: 34px 0px;
     }
 
+    .footerRight>h1{
+        width: fit-content;
+        margin-bottom: 24px;
+    }
+
     .footerlinks{
         text-align: center;
         margin-right: 10px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: auto;
     }
 
     .footerlinks>p{
-        font-size: 9px;
+        font-size: 13px;
     }
 
     .bottText{
