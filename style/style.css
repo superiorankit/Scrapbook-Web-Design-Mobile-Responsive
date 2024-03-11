@@ -1179,12 +1179,12 @@ display: none;
 
     .footerRight{
         width: 100%;
-        margin: 34px 0px;
+        margin-top: 34px;
     }
 
     .footerRight>h1{
         width: fit-content;
-        margin-bottom: 24px;
+        margin-bottom: 17px;
     }
 
     .footerlinks{
@@ -1202,7 +1202,7 @@ display: none;
     }
 
     .bottText{
-        margin: 31px 0;
+        margin: 33px 0;
         margin-bottom: 5px;
     }
 
