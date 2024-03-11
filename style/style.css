@@ -1058,7 +1058,7 @@ button:active{
     }
 
     .ninthTextDiv>h1{
-        font-size: 35px;
+        font-size: 32px;
         text-align: center;
         height: 200px;
         display: flex;
@@ -1071,6 +1071,12 @@ button:active{
 
     textarea{
         width: 265%;
+    }
+
+
+    button{
+        font-size: 12px;
+        padding: 10px;
     }
 
     .footer{
