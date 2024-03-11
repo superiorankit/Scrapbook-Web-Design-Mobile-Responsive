@@ -1079,8 +1079,12 @@ display: none;
 
     .dropBox{
         width: 173%;
-        padding: 12px 20px;
+        padding: 12px 4px;
 
+    }
+
+    .dropBox>p{
+        width: 92%;
     }
 
     .eighthDiv{
