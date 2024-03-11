@@ -20,7 +20,7 @@ To enhance the aesthetics of the landing page, I have incorporated an original p
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/superiorankit/Scrapbook-Web-Design.git
-   cd ./Scrapbook-Web-Design
+   git clone https://github.com/superiorankit/Scrapbook-Web-Design-Mobile-Responsive.git
+   cd ./Scrapbook-Web-Design-Mobile-Responsive
 
 - Open index.html file
