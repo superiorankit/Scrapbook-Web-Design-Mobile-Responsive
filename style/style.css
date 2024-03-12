@@ -52,6 +52,10 @@ img{
     transition: all 0.2s;
 }
 
+label{
+    display: none;
+}
+
 
 
 .firstLeftGraphics{
@@ -870,11 +874,16 @@ button:active{
     }
 
     .navList{
-        width: 100%;
+        width: 30%;
         padding: 20px 0;
         /* display: none; */
         position: absolute;
-    top: -41px;
+        top: 20px;
+        left: -143px;
+        /* bottom: -49px; */
+        flex-direction: column;
+        align-items: flex-start;
+        height: 200px;
         transition: all 0.3s;
     }
     
@@ -886,40 +895,40 @@ button:active{
 
     label{
         display: block;
-        height: 20px;
+        /* height: 20px; */
         background-color: #eeeeee;
-        position: relative;
-        z-index: 99;
-        width: 100%;
+        /* position: relative; */
+        /* z-index: 99; */
+        /* width: 100%; */
     }
 
-    #checkBox:checked + label>.hamBurg>.hamTop{
+    #checkBox:checked + .navDiv > label>.hamBurg>.hamTop{
         transform: rotate(45deg) translate(5px, 8px);
         width: 80%;
 
     }
 
 
-    #checkBox:checked + label>.hamBurg>.hamMid{
+    #checkBox:checked + .navDiv > label>.hamBurg>.hamMid{
         display: none;
 
     }
 
 
-    #checkBox:checked + label>.hamBurg>.hamBott{
+    #checkBox:checked + .navDiv > label>.hamBurg>.hamBott{
         transform: rotate(-45deg) translate(3px, -5px);
         width: 80%;
     ;
 
     }
 
-    #checkBox:checked + label + .navDiv>.navList{
-        top:-3px;
+    #checkBox:checked + .navDiv > label + .navList{
+        left: 0;
     
     }
 
-    #checkBox:checked + label + .navDiv + .introDiv{
-        margin-top: 80px;
+    #checkBox:checked +.navDiv + .introDiv{
+        margin-top: 200px;
     }
 
     /* .contactButton{
@@ -932,14 +941,11 @@ button:active{
     } */
 
     .contactButton{
-        position: absolute;
-        right: 0;
-        top: -22px;
-        font-size: 11px;
-        padding: 5px 20px;
-        border: 1.5px solid black;
-        background-color: #eeeeee;
-        z-index: 100;
+     /* top: -22px; */
+     font-size: 11px;
+     padding: 5px 27px;
+     border: 1.5px solid black;
+     background-color: #eeeeee;
     }
 
     .introDiv{
@@ -959,7 +965,7 @@ button:active{
     }
 
     .introTxtDiv>h1{
-        font-size: 2rem;
+        font-size: 1.8rem;
     line-height: 34px;
     }
 
@@ -970,6 +976,7 @@ button:active{
 
     .reserveButton{
         margin: auto;
+        margin-top: 23px;
     padding: 9px 39px;
     font-size: .9rem;
     }
