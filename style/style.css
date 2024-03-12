@@ -866,21 +866,31 @@ button:active{
 
     .navDiv{
         position: relative;
-        z-index: 99;
         transition: all 0.2s;
     }
 
     .navList{
         width: 100%;
         padding: 20px 0;
-        display: none;
+        /* display: none; */
+        position: absolute;
+    top: -41px;
         transition: all 0.3s;
     }
     
 
-    label{
+    /* label{
         display: block;
     width: fit-content;
+    } */
+
+    label{
+        display: block;
+        height: 20px;
+        background-color: #eeeeee;
+        position: relative;
+        z-index: 99;
+        width: 100%;
     }
 
     #checkBox:checked + label>.hamBurg>.hamTop{
@@ -904,9 +914,22 @@ button:active{
     }
 
     #checkBox:checked + label + .navDiv>.navList{
-        display: flex;
+        top:-3px;
     
     }
+
+    #checkBox:checked + label + .navDiv + .introDiv{
+        margin-top: 55px;
+    }
+
+    /* .contactButton{
+        position: absolute;
+        right: 0;
+        top: -22px;
+        font-size: 11px;
+        padding: 5px 20px;
+        border: 1.5px solid black;
+    } */
 
     .contactButton{
         position: absolute;
@@ -915,11 +938,14 @@ button:active{
         font-size: 11px;
         padding: 5px 20px;
         border: 1.5px solid black;
+        background-color: #eeeeee;
+        z-index: 100;
     }
 
     .introDiv{
         flex-direction: column-reverse;
         margin-top: 38px;
+        transition: all 0.3s;
     }
 
     .introImgDiv{
