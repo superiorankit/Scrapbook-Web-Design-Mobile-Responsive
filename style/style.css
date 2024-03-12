@@ -878,6 +878,11 @@ button:active{
     }
     
 
+    label{
+        display: block;
+    width: fit-content;
+    }
+
     #checkBox:checked + label>.hamBurg>.hamTop{
         transform: rotate(45deg) translate(5px, 8px);
         width: 80%;
