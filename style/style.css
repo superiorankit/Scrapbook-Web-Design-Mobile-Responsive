@@ -31,6 +31,10 @@ img{
 
 }
 
+#checkBox{
+    display: none;
+}
+
 .hamBurg{
     width: 29px;
     height: 17px;
@@ -802,9 +806,51 @@ button:active{
 }
 
 
-@media (max-width: 1047px){
+@media (min-width: 429px) and (max-width: 796px){
+
+    .navList{
+        width: 52%;
+    }
+
+    .navList>p{
+        font-size: 14px;
+    }
+
+    .contactButton{
+        padding: 8px 40px;
+        font-size: 0.8rem;
+    }
+
+    .introDiv{
+        margin-top: 14%;
+    }
+
+    .introTxtDiv{
+        width: 35%;
+    }
+
+    .introTxtDiv>h1{
+        font-size: 2.6rem;
+    line-height: 40px;
+    }
+
+    .introTxtDiv>p{
+        font-size: 0.7rem;
+        width: 98%;
+    }
+
+    .reserveButton{
+        font-size: 11px;
+        padding: 10px 22px;
+        margin-top: 9px;
+    }
+
+    .introImgDiv{
+        width: 61%;
+    }
     
 }
+
 
 @media (max-width: 428px){
 
@@ -830,28 +876,29 @@ button:active{
         display: none;
         transition: all 0.3s;
     }
+    
 
-    .hamBurg:hover>.hamTop{
+    #checkBox:checked + label>.hamBurg>.hamTop{
         transform: rotate(45deg) translate(5px, 8px);
         width: 80%;
 
     }
 
 
-    .hamBurg:hover>.hamMid{
+    #checkBox:checked + label>.hamBurg>.hamMid{
         display: none;
 
     }
 
 
-    .hamBurg:hover>.hamBott{
+    #checkBox:checked + label>.hamBurg>.hamBott{
         transform: rotate(-45deg) translate(3px, -5px);
         width: 80%;
     ;
 
     }
 
-    .hamBurg:hover + .navDiv>.navList{
+    #checkBox:checked + label + .navDiv>.navList{
         display: flex;
     
     }
