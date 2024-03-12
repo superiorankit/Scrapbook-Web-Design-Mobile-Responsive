@@ -806,7 +806,7 @@ button:active{
 }
 
 
-@media (min-width: 429px) and (max-width: 796px){
+/* @media (min-width: 429px) and (max-width: 796px){
 
     .navList{
         width: 52%;
@@ -849,7 +849,7 @@ button:active{
         width: 61%;
     }
     
-}
+} */
 
 
 @media (max-width: 428px){
@@ -964,6 +964,7 @@ button:active{
     }
 
     .introTxtDiv>p{
+        margin: auto;
         text-align: center;
     }
 
