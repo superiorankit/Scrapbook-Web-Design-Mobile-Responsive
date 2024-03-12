@@ -919,7 +919,7 @@ button:active{
     }
 
     #checkBox:checked + label + .navDiv + .introDiv{
-        margin-top: 55px;
+        margin-top: 80px;
     }
 
     /* .contactButton{
