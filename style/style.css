@@ -329,14 +329,31 @@ label{
 
 
 @keyframes plane {
-    from{
+    0%{
         top: 0px;
     }
 
-    to{
+    25%{
         top: -200px;
-        /* transform: rotate(180deg); */
+        transform: rotate(0deg);
     }
+
+    50%{
+        top: -200px;
+        transform: rotate(180deg);
+    }
+
+    75%{
+        top:0px;
+        transform: rotate(180deg);
+    }
+
+    100%{
+        top:0px;
+        transform: rotate(0deg);
+    }
+
+
     
 }
 
@@ -344,7 +361,7 @@ label{
     width: 5%;
     margin: auto;
     position: relative;
-    animation: plane 4s alternate infinite ease-in-out;
+    animation: plane 4s normal infinite ease-in-out;
 }
 
 .fourthDiv>h1{
