@@ -579,6 +579,7 @@ label{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .customerCard{
@@ -592,7 +593,17 @@ label{
 
 .customerCard:hover{
     cursor: pointer;
-    transform: scale(1.05);
+    transform: translate(0px, -20px);
+}
+
+@keyframes arrowleft{
+    from{
+        left:-31px
+    }
+
+    to{
+        left: -50px;
+    }
 }
 
 .eightharrowDivFirst{
@@ -607,6 +618,13 @@ label{
     width: fit-content;
     margin: auto;
     height: 0px;
+    z-index: 1;
+
+}
+
+.eightharrowDivFirst:hover{
+    cursor: pointer;
+    animation: arrowleft 0.5s linear infinite normal;
 }
 
 .eightharrowline{
@@ -652,6 +670,16 @@ label{
     margin-bottom: 15px;
 }
 
+@keyframes arrowright{
+    from{
+        right:-31px
+    }
+
+    to{
+        right: -50px;
+    }
+}
+
 .eightharrowDivLast{
     position: absolute;
     border: 2px solid black;
@@ -663,6 +691,12 @@ label{
     width: fit-content;
     margin: auto;
     height: 0px;
+    z-index: 1;
+}
+
+.eightharrowDivLast:hover{
+    cursor: pointer;
+    animation: arrowright 0.5s linear infinite normal;
 }
 
 .eighthGraphTop{
@@ -970,8 +1004,8 @@ button:active{
     }
 
     .introTxtDiv>p{
-        margin: auto;
         text-align: justify;
+        width: 100%;
     }
 
     .reserveButton{
@@ -1061,7 +1095,7 @@ display: none;
     }
 
     .fourthDiv>p{
-        font-size: 12px;
+        font-size: 10px;
     margin-bottom: 15px;
     }
 
@@ -1180,6 +1214,9 @@ display: none;
 
     }
 
+
+
+
     .customerCardText>p{
         text-align: justify;
     }
@@ -1205,19 +1242,28 @@ display: none;
         padding: 20px 30px;
     }
 
+    .customerCardTop{
+        margin-bottom: 0;
+    }
+
+    .customerCardMid, .customerCardBott{
+        display: none;
+    }
+
     .eightharrowDivFirst{
-        top: -26px;
-    left: 41%;
-    bottom: 0;
-    margin: 0;
-    transform: rotate(-90deg);
+        padding: 20px 10px;
+        left: -24px;
+        bottom: 42%;
+    }
+
+    .eightharrowDivFirst:hover, .eightharrowDivLast:hover{
+        animation: none;
     }
 
     .eightharrowDivLast{
-        margin: 0;
-        bottom: -26px;
-        transform: rotate(90deg);
-        left: 42%;
+        padding: 20px 11px;
+        right: -24px;
+        bottom: 42%;
     }
 
     .eighthGraphBott{
