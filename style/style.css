@@ -641,7 +641,7 @@ img{
     margin-bottom: 10px;
 }
 
-.customerCardText>P{
+.customerCardText>p{
     text-align: center;
     font-size: 11px;
     word-spacing: 5px;
@@ -955,7 +955,7 @@ button:active{
     .introTxtDiv{
         padding: 36px 0;
         width: 100%;
-        text-align: center;
+        text-align: justify;
     }
 
     .introTxtDiv>h1{
@@ -965,7 +965,7 @@ button:active{
 
     .introTxtDiv>p{
         margin: auto;
-        text-align: center;
+        text-align: justify;
     }
 
     .reserveButton{
@@ -989,10 +989,12 @@ button:active{
 
     .secondText>h1{
         font-size: 2rem;
+        text-align: justify;
     }
 
     .secondText>p{
         margin: 17px 0px;
+        text-align: justify;
     }
 
     .secondDivRight{
@@ -1007,7 +1009,7 @@ button:active{
     .thirdDiv{
         margin-top: 407px;
         flex-direction: column;
-        text-align: center;
+        text-align: justify;
         padding: 40px 0;
 
     }
@@ -1025,7 +1027,7 @@ button:active{
     }
 
     .cardTxtDiv>p{
-        text-align: center;
+        text-align: justify;
     }
 
     .thirdRightGraphics{
@@ -1037,7 +1039,7 @@ display: none;
     }
 
     .planeDiv{
-        width: 20%;
+        width: 16%;
     }
 
     .fourthDiv>h1{
@@ -1089,7 +1091,7 @@ display: none;
 
     .fifthDivText>h1{
         width: 100%;
-    text-align: center;
+    text-align: justify;
     font-size: 18px;
     }
 
@@ -1171,6 +1173,10 @@ display: none;
 
     }
 
+    .customerCardText>p{
+        text-align: justify;
+    }
+
     .eighthGraphTop{
         display: none;
     }
@@ -1221,7 +1227,7 @@ display: none;
 
     .ninthTextDiv>h1{
         font-size: 32px;
-        text-align: center;
+        text-align: justify;
         /* height: 200px; */
         display: flex;
         align-items: center;
@@ -1271,7 +1277,7 @@ display: none;
     }
 
     .footerlinks{
-        text-align: center;
+        text-align: justify;
         margin-right: 10px;
         display: flex;
         flex-direction: column;
